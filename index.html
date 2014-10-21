@@ -14,17 +14,45 @@
     <meta name="keywords" content="mobile android ios applications apps development design graphics usability html html5 web web2.0 website websites creative studio css3 jquery bootstrap skuares">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         body {
             padding-top: 0px;
             padding-bottom: 20px;
         }
+        .monster {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            margin: 2% auto;
+            background: url('img/le-cloud.png') left center;
+            overflow: auto;
+        }
+        .monster:hover {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            margin: 2% auto;
+            background: url('img/le-cloud.png') left center;
+            animation: play .9s steps(18);
+            overflow: auto;
+        }
+        @keyframes play {
+            100% {
+                background-position: -1800px;
+            }
+        }
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <script src="js/prefixfree.min.js"></script>
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <!--here-->
+    <script src="js/prefixfree.min.js"></script>
+    <!--here-->
 </head>
 
 <body>
@@ -34,17 +62,21 @@
 
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="home">
-<!--        <div class="container">-->
-            <img src="img/Home-Cover.png" class="cover-photo">
+
+    <div class="monster" style="left:20%;top:39%;"></div>
+    <div class="Home">
+        <!--        <div class="monster"></div>-->
+        <img src="img/Home-Cover.png" class="cover-photo">
+        <div class="container">
             <h1>Hello, world!</h1>
             <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            
+
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-aboutus">
         <!-- Example row of columns -->
+
         <div class="row">
             <div class="col-md-4">
                 <h2>Heading</h2>
@@ -83,7 +115,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--     Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function (b, o, i, l, e, r) {
             b.GoogleAnalyticsObject = l;

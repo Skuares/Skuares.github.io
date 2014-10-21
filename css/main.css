@@ -1,33 +1,26 @@
+/*Home section styling*/
 
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-.home
-{
+.Home {
     background-color: #000;
     max-width: 100%;
-    
 }
-.cover-photo
-{
-   max-width: 100%;
+.container {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    position:relative;
+}
+.container-aboutus {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+/*The cover photo full width*/
+
+.cover-photo {
+    max-width: 100%;
     height: auto;
-	margin: 0 0 10px 0; 
+    margin: 0 0 10px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
