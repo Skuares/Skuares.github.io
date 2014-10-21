@@ -1,0 +1,90 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> -- <role> -- <twitter>
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr,
+    Bootstrap,Mediaquires
+
+# TASKS
+->HOME PAGE:
+The layout is found in the Resources file. 
+	1-implement the home page element by element using divs to be replaced later on by the animations, 
+	2-The 2nd section after the graphics is the intro to the company, a brief about us
+	3-The 3rd section is a statement of art & code which cover the things we do.
+	4-the rocks will be done using parallax to scroll slower then the background
+	5-figure a place for the menu, perhaps at the bottom of the page? 
+->About Us/Us:
+No need for intro, it’s done in the home page, 
+1-list of services:
+
+——————————
+Branding
+is not just a Logo Design, it's much much more
+
+Photography / Video Photography /
+Video Our professional Photographer can produce bespoke images for you and your brand 
+
+Website Design
+Clean, professional bespoke website produced for clients all over the world 
+
+Print
+Business Cards, Stationery, Brochures, you name it - we can do it
+
+
+Mobile
+Dedicated site built specifically for Mobile to increase functionality or a native app 
+to cater for your needs across all major platforms.  
+
+Content Management System
+Have the ability to update your website without needing to contact us
+
+eCommerce
+Have the ability to sell online to your customers
+
+Website Development
+Website development with the latest technologies and trends
+
+Social Marketing
+Our PR guru can update your Twitter / Facebook on a regular basis
+
+Search Engine Optimisation
+Increase your visibility within search engines such as Google
+
+Copywriting
+Need help with words? Our PR guru can guide you through content
+
+Custom Software/Desktop Applications. 
+??
+——————————
+2-Meet the team
+
+->Experiments: 
+Full screen gallery of images that are links to pages with some content inside. 
+“Due to our NDA agreements with client we can’t share our our published works, this is the next best thing to show you some of what we love to do in the studio”
+
+->Say Hello/Contact Us:
+1-Standard Contact Form, functional with STMP function. 
+2-Need a quote form: 
+	What do you want us to do (text field)	
+	Deadline
+	budget
+	notes
+	Submit
+
+
+More to come as we progress:
+
+
+
+
+
