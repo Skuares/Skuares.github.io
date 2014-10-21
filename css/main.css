@@ -5,7 +5,18 @@
    ========================================================================== */
 
 
-
+.home
+{
+    background-color: #000;
+    max-width: 100%;
+    
+}
+.cover-photo
+{
+   max-width: 100%;
+    height: auto;
+	margin: 0 0 10px 0; 
+}
 
 
 
