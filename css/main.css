@@ -18,15 +18,23 @@
         display: none;
     }
 }
-.home-small
-{
-    display: none;  
+.home-small {
+    display: none;
     width: 100%;
     height: auto;
 }
-.home-small img
-{
+.home-small img {
     width: 100%;
+    height: auto;
+}
+.logo img{
+    display: block;
+    position: absolute;
+    margin: auto;
+    
+    top: 31%;
+    left: 34%;
+    width: 30%;
     height: auto;
 }
 .container {
