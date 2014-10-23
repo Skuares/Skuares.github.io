@@ -48,7 +48,7 @@
             }
         }
         /*    cloud end*/
-/*        monster start*/
+        /*        monster start*/
         .monster {
             display: block;
             position: absolute;
@@ -61,20 +61,19 @@
             background-position: 0 0;
             background-size: 2000%;
             display: block;
-            
         }
         .monster:hover {
-/*            background-position: 500% 0;*/
+            /*            background-position: 500% 0;*/
             animation: playmonster 1s steps(20);
             animation-iteration-count: 10;
-/*            18 steps to go over al the sprites i have, if you had 4 in the sprite the value would be 4 for example */
+            /*            18 steps to go over al the sprites i have, if you had 4 in the sprite the value would be 4 for example */
         }
         @keyframes playmonster {
             100% {
                 background-position: 2000% 0;
             }
         }
-/*        monster end*/
+        /*        monster end*/
         .cell {
             display: block;
             position: absolute;
@@ -88,7 +87,7 @@
             background-size: 2500%;
             animation: playcell 1s steps(25);
             animation-iteration-count: 100;
-            display: block;   
+            display: block;
         }
         @keyframes playcell {
             100% {
@@ -107,25 +106,85 @@
             background-position: 0 0;
             background-size: 2000%;
             display: block;
-            
         }
         .monster:hover {
-/*            background-position: 500% 0;*/
+            /*            background-position: 500% 0;*/
             animation: playmonster 1s steps(20);
             animation-iteration-count: 10;
-/*            18 steps to go over al the sprites i have, if you had 4 in the sprite the value would be 4 for example */
+            /*            18 steps to go over al the sprites i have, if you had 4 in the sprite the value would be 4 for example */
         }
         @keyframes playmonster {
             100% {
                 background-position: 2000% 0;
             }
         }
-/*        monster end*/
+        /*        monster end*/
+        /*        traingle start*/
+        .triangle {
+            display: block;
+            position: absolute;
+            top: 35%;
+            left: 62%;
+            width: 25%;
+            height: 0;
+            padding-bottom: 20%;
+            background-image: url("img/sprites/triangle-sprite.png");
+            background-position: 0 0;
+            background-size: 2000%;
+            display: block;
+        }
+        .triangle:hover {
+            animation: playtriangle 1s steps(20);
+            animation-iteration-count: 10;
+        }
+        @keyframes playtriangle {
+            100% {
+                background-position: 2000% 0;
+            }
+        }
+        /*        traingle end*/
+        /*        squid start*/
+        .squid {
+            display: block;
+            position: absolute;
+            top: 11%;
+            left: 62%;
+            width: 15%;
+            height: 0;
+            padding-bottom: 15%;
+            background-image: url("img/sprites/squid-sprite.png");
+            background-position: 0 0;
+            background-size: 1200%;
+            display: block;
+            animation: playsquid steps(12) .9s 10,hovereffect 5s ease-in-out infinite; 
+            animation-duration: .9s,3s;
+        }
+        @keyframes hovereffect {
+            0% {
+                transform: translate(0, 0px);
+            }
+            
+            50% {
+                transform: translate(0, -20px);
+            }
+            
+            100% {
+                transform: translate(0, 0px);
+                
+            }
+        }
+        @keyframes playsquid {
+            100% {
+                background-position: 1200% 0;
+            }
+        }
+        /*        squid end*/
+        /*        bunny start*/
         .bunny {
             display: block;
             position: absolute;
             top: 12%;
-            left: 70%;
+            left: 78%;
             width: 20%;
             height: 0;
             padding-bottom: 16%;
@@ -134,12 +193,42 @@
             background-size: 3600%;
             animation: playbunny 1s steps(36);
             animation-iteration-count: 100;
-            display: block;   
+            display: block;
         }
         @keyframes playbunny {
             100% {
                 background-position: 3600% 0;
             }
+        }
+        /*        bunny end*/
+        /*        loader starts here*/
+        #loader {
+            z-index: 1999;
+            position: fixed;
+            top: 40%;
+            left: 45%;
+            width: 10%;
+            height: 0;
+            padding-bottom: 10%;
+            background-image: url("img/sprites/loader-sprite.png");
+            background-position: 0 0;
+            background-size: 800%;
+            animation: playloader .5s steps(8) infinite alternate;
+            display: block;
+        }
+        @keyframes playloader {
+            100% {
+                background-position: 800% 0;
+            }
+        }
+        #loaderwrap {
+            z-index: 1998;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: black;
         }
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -150,7 +239,13 @@
 
     <!--here-->
     <script src="js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
     <!--here-->
+    <script>
+        $(window).load(function () {
+            $("#loaderwrap").fadeOut("slow");
+        });
+    </script>
 </head>
 
 <body>
@@ -160,16 +255,23 @@
 
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-
+    <div id="loaderwrap">
+        <div id="loader"></div>
+    </div>
+    <div class="monster" style="transform: rotate(-40deg);"></div>
     <div class="home-small">
- <img src="img/Logo-hq.png" />
-</div>
+        <img src="img/Logo-hq.png" />
+    </div>
     <div class="home">
         <div class="cloud"></div>
         <div class="monster" style="transform: rotate(-40deg);"></div>
         <div class="cell" style="transform: rotate(-35deg);"></div>
+        <div class="triangle" style="transform: rotate(45deg)"></div>
         <div class="bunny"></div>
-        <div class="logo"><img src="img/Logo-hq.png" /></div>
+        <div class="squid"></div>
+        <div class="logo">
+            <img src="img/Logo-hq.png" />
+        </div>
         <img src="img/bg/bg-empty-hd.png" class="cover-photo" style="z-index: 1;">
         <div class="container">
             <h2>
