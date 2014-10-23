@@ -17,37 +17,88 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-        body {
-            padding-top: 0px;
-            padding-bottom: 20px;
+        .home {
+            width: 100%;
+            height: auto;
+            display: block;
+            background-color: #000;
+            max-width: 100%;
+            position: relative;
         }
-        .monster {
+        /*    cloud start*/
+        .cloud {
+            display: block;
             position: absolute;
-            width: 100px;
-            height: 100px;
-            margin: 2% auto;
-            background: url('img/le-cloud.png') left center;
-            overflow: auto;
+            top: 30%;
+            left: 17%;
+            width: 15%;
+            height: 0;
+            padding-top: 15%;
+            background-image: url("img/sprites/le-cloud-hq.png");
+            background-position: 0 0;
+            background-size: 1800%;
+        }
+        .cloud:hover {
+            animation: playcloud .9s steps(18);
+            animation-iteration-count: 10;
+        }
+        @keyframes playcloud {
+            100% {
+                background-position: 1800% 0;
+            }
+        }
+        /*    cloud end*/
+/*        monster start*/
+        .monster {
+            display: block;
+            position: absolute;
+            top: 61%;
+            left: 20%;
+            width: 15%;
+            height: 0;
+            padding-bottom: 15%;
+            background-image: url("img/sprites/monster-sprite.png");
+            background-position: 0 0;
+            background-size: 2000%;
+            display: block;
             
         }
         .monster:hover {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            margin: 2% auto;
-            background: url('img/le-cloud.png') left center;
-            animation: play .9s steps(18);
-            overflow: auto;
+/*            background-position: 500% 0;*/
+            animation: playmonster 1s steps(20);
+            animation-iteration-count: 10;
+/*            18 steps to go over al the sprites i have, if you had 4 in the sprite the value would be 4 for example */
         }
-        @keyframes play {
+        @keyframes playmonster {
             100% {
-                background-position: -1800px;
+                background-position: 2000% 0;
+            }
+        }
+/*        monster end*/
+        .cell {
+            display: block;
+            position: absolute;
+            top: 61%;
+            left: 63%;
+            width: 15%;
+            height: 0;
+            padding-bottom: 15%;
+            background-image: url("img/sprites/cell-sprite.png");
+            background-position: 0 0;
+            background-size: 2500%;
+            animation: playcell 1s steps(25);
+            animation-iteration-count: 100;
+            display: block;   
+        }
+        @keyframes playcell {
+            100% {
+                background-position: 2500% 0;
             }
         }
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
@@ -64,12 +115,19 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
-    <div class="monster" style="left:20%;top:39%;"></div>
-    <div class="Home">
-        <!--        <div class="monster"></div>-->
-        <img src="img/Home-Cover.png" class="cover-photo">
+    <div class="home-small">
+ <img src="img/Logo-hq.png" />
+</div>
+    <div class="home">
+        <div class="cloud"></div>
+        <div class="monster" style="transform: rotate(-40deg);"></div>
+        <div class="cell" style="transform: rotate(-35deg);"></div>
+        <img src="img/bg/bg-empty-hd.png" class="cover-photo" style="z-index: 1;">
         <div class="container">
-            <h1>Hello, world!</h1>
+            <h2>
+    <img src="img/slash.png"> 
+    <span>Hello</span>
+            </h2>
             <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
 
         </div>

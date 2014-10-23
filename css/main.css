@@ -1,8 +1,33 @@
 /*Home section styling*/
 
+/*
 .Home {
     background-color: #000;
     max-width: 100%;
+}
+*/
+
+@media screen and (max-width: 960px) {
+    .home {
+        display: none;
+    }
+    .home-small {
+        display: block !important;
+    }
+    .cover-photo {
+        display: none;
+    }
+}
+.home-small
+{
+    display: none;  
+    width: 100%;
+    height: auto;
+}
+.home-small img
+{
+    width: 100%;
+    height: auto;
 }
 .container {
     padding-left: 60px;
@@ -11,7 +36,9 @@
     font-size: 14px;
     line-height: 1.42857143;
     color: #fff;
-    position:relative;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
 }
 .container-aboutus {
     padding-left: 60px;
@@ -23,4 +50,17 @@
     max-width: 100%;
     height: auto;
     margin: 0 0 10px 0;
+}
+.container h2 {
+    overflow: auto;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+.containerh2 span {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.container h2 img {
+    max-width: 5%;
 }
