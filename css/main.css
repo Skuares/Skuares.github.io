@@ -60,7 +60,7 @@
     margin: 0 0 10px 0;
 }
 .container h2 {
-    overflow: auto;
+/*    overflow: auto;*/
     margin: auto;
     font-family: 'Lato', sans-serif;
 }
