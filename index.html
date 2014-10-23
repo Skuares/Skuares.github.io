@@ -150,81 +150,127 @@
             }
         }
         /*        squid end*/
-        /*        bunny start*/
-        .bunny {
+        /*        alien start*/
+        .alien {
             display: block;
             position: absolute;
-            top: 12%;
-            left: 78%;
-            width: 20%;
-            height: 0;
-            padding-bottom: 16%;
-            background-image: url("img/sprites/bunny-sprite.png");
-            background-position: 0 0;
-            background-size: 3600%;
-            animation: playbunny 1s steps(36);
-            animation-iteration-count: infinite;
-        }
-        @keyframes playbunny {
-            100% {
-                background-position: 3600% 0;
-            }
-        }
-        /*        bunny end*/
-        /*        new animation roll around*/
-        @keyframes rollaround {
-            /*            rollaround 3s ease-in-out infinite*/
-            0% {
-                transform: translate(0, 0px);
-            }
-            50% {
-                transform: translate(5, 15px);
-            }
-            100% {
-                transform: translate(0, 10px);
-            }
-        }
-        /*        loader starts here*/
-        #loader {
-            z-index: 1999;
-            position: fixed;
-            top: 40%;
-            left: 45%;
+            top: 15%;
+            left: 10%;
             width: 10%;
             height: 0;
             padding-bottom: 10%;
-            background-image: url("img/sprites/loader-sprite.png");
+            background-image: url("img/sprites/alien-sprites.png");
             background-position: 0 0;
-            background-size: 800%;
-            animation: playloader .5s steps(8) infinite alternate;
-            display: block;
+            background-size: 700%;
+            animation: playalien 1.7s steps(7);
+            animation-iteration-count: infinite;
         }
-        @keyframes playloader {
+        @keyframes playalien {
             100% {
-                background-position: 800% 0;
+                background-position: 700% 0;
             }
         }
-        /*        left cell start*/
-        .left-cell {
+        /*        alien end*/
+        /*        squirel-dog start*/
+        .squirel-dog {
             display: block;
             position: absolute;
-            top: 25%;
-            left: -3%;
+            top: 5%;
+            left: 46%;
+            width: 13%;
+            height: 0;
+            padding-bottom: 13%;
+            background-image: url("img/sprites/squirel-dog.png");
+            background-position: 0 0;
+            background-size: 2700%;
+            animation-iteration-count: infinite;
         }
-        .left-cell img {
-            max-width: 60%;
-            max-height: auto;
+        .squirel-dog:hover {
+            animation: playsquirel-dog 1s steps(27);
+            animation-iteration-count: 10;
         }
-        /*        left cell end*/
-        #loaderwrap {
-            z-index: 1998;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: black;
+        @keyframes playsquirel-dog {
+            100% {
+                background-position: 2700% 0;
+            }
         }
+    }
+    /*        squirel-dog end*/
+    /*        bunny start*/
+    .bunny {
+        display: block;
+        position: absolute;
+        top: 12%;
+        left: 78%;
+        width: 20%;
+        height: 0;
+        padding-bottom: 16%;
+        background-image: url("img/sprites/bunny-sprite.png");
+        background-position: 0 0;
+        background-size: 3600%;
+        animation: playbunny 1s steps(36);
+        animation-iteration-count: infinite;
+    }
+    @keyframes playbunny {
+        100% {
+            background-position: 3600% 0;
+        }
+    }
+    /*        bunny end*/
+    /*        new animation roll around*/
+    @keyframes rollaround {
+        /*            rollaround 3s ease-in-out infinite*/
+        0% {
+            transform: translate(0, 0px);
+        }
+        50% {
+            transform: translate(5, 15px);
+        }
+        100% {
+            transform: translate(0, 10px);
+        }
+    }
+    /*        loader starts here*/
+    #loader {
+        z-index: 1999;
+        position: fixed;
+        top: 40%;
+        left: 45%;
+        width: 10%;
+        height: 0;
+        padding-bottom: 10%;
+        background-image: url("img/sprites/loader-sprite.png");
+        background-position: 0 0;
+        background-size: 800%;
+        animation: playloader .5s steps(8) infinite alternate;
+        display: block;
+    }
+    @keyframes playloader {
+        100% {
+            background-position: 800% 0;
+        }
+    }
+    /*        left cell start*/
+    .left-cell {
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: -3%;
+    }
+    .left-cell img {
+        max-width: 70%;
+        max-height: auto;
+    }
+    /*        left cell end*/
+    #loaderwrap {
+        z-index: 1998;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: black;
+    }
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -251,6 +297,7 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div id="loaderwrap">
+        <p>Hyper loading</p>
         <div id="loader"></div>
     </div>
 
@@ -264,9 +311,12 @@
         <div class="cloud"></div>
         <div class="monster" style="transform: rotate(-40deg);"></div>
         <div class="cell" style="transform: rotate(-35deg);"></div>
-        <div class="triangle" style="transform: rotate(45deg)"></div>
+        <div class="triangle" style="transform: rotate(35deg)"></div>
         <div class="bunny"></div>
         <div class="squid"></div>
+        <div class="squirel-dog" style="transform: rotate(-20deg)"></div>
+        <div class="alien" style="transform: rotate(7deg);"></div>
+
         <div class="logo">
             <img src="img/Logo-hq.png" />
         </div>
