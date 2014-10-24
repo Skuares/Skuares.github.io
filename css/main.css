@@ -7,6 +7,7 @@
 }
 */
 
+/*
 @media screen and (max-width: 900px) {
     .home {
         display: none;
@@ -18,6 +19,8 @@
         display: none;
     }
 }
+*/
+
 /*<-HOME CSS ->*/
 
 .home-small {
@@ -87,22 +90,26 @@
     left: 7%;
     top: 55%;
 }
-
-.fishes
-{
+.fishes {
     position: absolute;
     max-width: 15%;
     height: auto;
     left: 20%;
     top: 13%;
 }
-#shapes
-{
- position: absolute;
+#mushroom {
+    position: absolute;
+    max-width: 5%;
+    height: auto;
+    left: 68%;
+    top: 13%;
+}
+#shapes {
+    position: absolute;
     max-width: 35%;
     height: auto;
     left: 30%;
-    top: 40%;   
+    top: 40%;
 }
 /*<-HOME CSS ->*/
 

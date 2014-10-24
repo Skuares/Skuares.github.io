@@ -9,15 +9,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>Skuares | a Creative and Digtial Studio</title>
     <meta name="description" content="Skuares a Creative and Digtial Studio offering CMS, responsive websites, Graphic Design, Photography & Mobile Applications.">
     <meta name="keywords" content="mobile android ios applications apps development design graphics usability html html5 web web2.0 website websites creative studio css3 jquery bootstrap skuares">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+
     <!-- social meta tags -->
-    <title>Page Title. Maximum length 60-70 characters</title>
-
-
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Skuares a Creative & Digtial Studio" />
@@ -111,12 +110,36 @@
             }
         }
         /*        monster end*/
+        /*        squid alien start*/
+        .squid-alien {
+            display: block;
+            position: absolute;
+            top: 63%;
+            left: 87%;
+            width: 12%;
+            height: 0;
+            padding-bottom: 12%;
+            background-image: url("img/sprites/squid-alien-sprite.png");
+            background-position: 0 0;
+            background-size: 2000%;
+            transform: rotate(-35deg);
+        }
+        .squid-alien:hover {
+            animation: playtsquid-alien .9s steps(20);
+            animation-iteration-count: 10;
+        }
+        @keyframes playtsquid-alien {
+            100% {
+                background-position: 2000% 0;
+            }
+        }
+        /*        squid alien end*/
         /*        traingle start*/
         .triangle {
             display: block;
             position: absolute;
-            top: 42%;
-            left: 63%;
+            top: 38%;
+            left: 67%;
             width: 15%;
             height: 0;
             padding-bottom: 12%;
@@ -308,7 +331,7 @@
             display: block;
             position: absolute;
             top: 12%;
-            left: 78%;
+            left: 70%;
             width: 20%;
             height: 0;
             padding-bottom: 16%;
@@ -375,7 +398,22 @@
             max-width: 5%;
             height: auto;
             left: 40%;
-            top: 10%;
+            top: 7%;
+        }
+        .firething:hover {
+            animation: playfirething 1s;
+            animation-iteration-count: 10;
+        }
+        @keyframes playfirething {
+            0% {
+                max-width: 5%;
+            }
+            50% {
+                max-width: 8%;
+            }
+            100% {
+                max-width: 5%;
+            }
         }
         /*        firething animation end*/
         #loaderwrap {
@@ -418,7 +456,7 @@
     </div>
     <!--mobile version-->
     <div class="home-small">
-        <img src="img/home/Logo-hq.png" />
+        <img src="img/home/Logo-hq.png" alt="Logo" />
     </div>
     <!--    Home Page Top start-->
     <div class="home">
@@ -429,7 +467,7 @@
 -->
 
         <!--        home background image stack start-->
-        <img src="img/bg/bg-empty-lines-2.png" class="lines1">
+        <img src="img/bg/bg-empty-lines-2.png" alt="Empty line" class="lines1">
         <img src="img/bg/bg-empty-lines.png" class="cover-photo">
         <img src="img/bg/bg-cell.png" class="small-cell-left">
         <img src="img/bg/bg-rocket.png" id="rocket">
@@ -438,6 +476,7 @@
         <img src="img/bg/doted-lines1.png" class="doted-line1">
         <img src="img/bg/main-cell.png" class="maincell">
         <img src="img/home/fire-thingy.png" class="firething">
+        <img src="img/home/mushroom.png" id="mushroom">
         <img src="img/home/Shapes.png" id="shapes">
         <div class="bird" style="transform: rotate(20deg);"></div>
         <div class="bird1" style="transform: rotate(10deg);"></div>
@@ -448,12 +487,12 @@
         <div class="monster" style="transform: rotate(-40deg);"></div>
         <div class="cell" style="transform: rotate(-35deg);"></div>
         <div class="triangle" style="transform: rotate(35deg)"></div>
-
         <div class="squid"></div>
         <div class="squirel-dog" style="transform: rotate(-20deg)"></div>
         <div class="alien" style="transform: rotate(7deg);"></div>
         <div class="bunny"></div>
         <div class="bunny2"></div>
+        <div class="squid-alien"></div>
 
         <div class="logo">
             <img src="img/home/Logo-hq.png" />
