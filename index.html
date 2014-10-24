@@ -115,11 +115,11 @@
         .triangle {
             display: block;
             position: absolute;
-            top: 30%;
-            left: 62%;
-            width: 25%;
+            top: 42%;
+            left: 63%;
+            width: 15%;
             height: 0;
-            padding-bottom: 20%;
+            padding-bottom: 12%;
             background-image: url("img/sprites/triangle-sprite.png");
             background-position: 0 0;
             background-size: 2000%;
@@ -147,7 +147,6 @@
             background-position: 0 0;
             background-size: 1200%;
             animation: roll 9s ease-in-out infinite, playsquid .9s steps(12) infinite;
-            
         }
         @keyframes hovereffect {
             0% {
@@ -162,15 +161,12 @@
         }
         @keyframes roll {
             0% {
-                
                 transform: rotate(0deg)
             }
             50% {
-                
                 transform: rotate(20deg);
             }
             100% {
-                
                 transform: rotate(0deg);
             }
         }
@@ -180,6 +176,30 @@
             }
         }
         /*        squid end*/
+        /*        squre boy start*/
+        .square-boy {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            width: 10%;
+            height: 0;
+            padding-bottom: 10%;
+            background-image: url("img/sprites/box-boy-sprite.png");
+            background-position: 0 0;
+            background-size: 1500%;
+            transform: rotate(10deg);
+        }
+        .square-boy:hover {
+            animation: playtriangle .8s steps(20);
+            animation-iteration-count: 15;
+        }
+        @keyframes playboxboy {
+            100% {
+                background-position: 1500% 0;
+            }
+        }
+        /*        squre boy end*/
         /*        alien start*/
         .alien {
             display: block;
@@ -225,7 +245,7 @@
             }
         }
         /*        squirel-dog end*/
-/*        bird start*/
+        /*        bird start*/
         .bird {
             display: block;
             position: absolute;
@@ -282,7 +302,7 @@
                 background-position: 1000% 0;
             }
         }
-/*        bird end*/
+        /*        bird end*/
         /*        bunny start*/
         .bunny {
             display: block;
@@ -402,7 +422,7 @@
     </div>
     <!--    Home Page Top start-->
     <div class="home">
-<!--
+        <!--
         <div class="left-cell">
             <img src="img/home/left-cell.png">
         </div>
@@ -412,18 +432,19 @@
         <img src="img/bg/bg-empty-lines-2.png" class="lines1">
         <img src="img/bg/bg-empty-lines.png" class="cover-photo">
         <img src="img/bg/bg-cell.png" class="small-cell-left">
+        <img src="img/bg/bg-rocket.png" id="rocket">
         <img src="img/home/fishes.png" class="fishes">
         <img src="img/home/cupcakes.png" class="cupcakes">
         <img src="img/bg/doted-lines1.png" class="doted-line1">
         <img src="img/bg/main-cell.png" class="maincell">
         <img src="img/home/fire-thingy.png" class="firething">
-        <img src="img/bg/bg-rocket.png" id="rocket">
         <img src="img/home/Shapes.png" id="shapes">
         <div class="bird" style="transform: rotate(20deg);"></div>
-        <div class="bird1"  style="transform: rotate(10deg);"></div>
-        <div class="bird2"  style="transform: rotate(-50deg);"></div>
+        <div class="bird1" style="transform: rotate(10deg);"></div>
+        <div class="bird2" style="transform: rotate(-50deg);"></div>
         <!--        home background stack end-->
         <div class="cloud"></div>
+        <div class="square-boy"></div>
         <div class="monster" style="transform: rotate(-40deg);"></div>
         <div class="cell" style="transform: rotate(-35deg);"></div>
         <div class="triangle" style="transform: rotate(35deg)"></div>

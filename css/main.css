@@ -54,10 +54,10 @@
 }
 #rocket {
     position: absolute;
-    max-width: 40%;
+    max-width: 48%;
     height: auto;
-    left: 22%;
-    top: 23%;
+    left: 20%;
+    top: 10%;
 }
 .maincell {
     position: absolute;
@@ -94,7 +94,7 @@
     max-width: 15%;
     height: auto;
     left: 20%;
-    top: 3%;
+    top: 13%;
 }
 #shapes
 {
