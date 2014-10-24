@@ -138,16 +138,16 @@
         .squid {
             display: block;
             position: absolute;
-            top: 11%;
-            left: 62%;
+            top: 13%;
+            left: 58%;
             width: 9%;
             height: 0;
             padding-bottom: 9%;
             background-image: url("img/sprites/squid-sprite.png");
             background-position: 0 0;
             background-size: 1200%;
-            animation: playsquid steps(12) .9s infinite, hovereffect 5s ease-in-out infinite;
-            animation-duration: .9s, 3s;
+            animation: roll 9s ease-in-out infinite, playsquid .9s steps(12) infinite;
+            
         }
         @keyframes hovereffect {
             0% {
@@ -158,6 +158,20 @@
             }
             100% {
                 transform: translate(0, 0px);
+            }
+        }
+        @keyframes roll {
+            0% {
+                
+                transform: rotate(0deg)
+            }
+            50% {
+                
+                transform: rotate(20deg);
+            }
+            100% {
+                
+                transform: rotate(0deg);
             }
         }
         @keyframes playsquid {
@@ -211,6 +225,64 @@
             }
         }
         /*        squirel-dog end*/
+/*        bird start*/
+        .bird {
+            display: block;
+            position: absolute;
+            top: 10%;
+            left: 33%;
+            width: 7%;
+            height: 0;
+            padding-bottom: 7%;
+            background-image: url("img/sprites/birdt-sprite.png");
+            background-position: 0 0;
+            background-size: 1000%;
+            animation-iteration-count: infinite;
+        }
+        .bird1 {
+            display: block;
+            position: absolute;
+            top: 40%;
+            left: 7%;
+            width: 5%;
+            height: 0;
+            padding-bottom: 5%;
+            background-image: url("img/sprites/birdt-sprite.png");
+            background-position: 0 0;
+            background-size: 1000%;
+            animation-iteration-count: infinite;
+        }
+        .bird2 {
+            display: block;
+            position: absolute;
+            top: 68%;
+            left: 80%;
+            width: 6%;
+            height: 0;
+            padding-bottom: 6%;
+            background-image: url("img/sprites/birdt-sprite.png");
+            background-position: 0 0;
+            background-size: 1000%;
+            animation-iteration-count: infinite;
+        }
+        .bird:hover {
+            animation: playbird 1s steps(10);
+            animation-iteration-count: 10;
+        }
+        .bird1:hover {
+            animation: playbird 1s steps(10);
+            animation-iteration-count: 10;
+        }
+        .bird2:hover {
+            animation: playbird 1s steps(10);
+            animation-iteration-count: 10;
+        }
+        @keyframes playbird {
+            100% {
+                background-position: 1000% 0;
+            }
+        }
+/*        bird end*/
         /*        bunny start*/
         .bunny {
             display: block;
@@ -282,7 +354,7 @@
             position: absolute;
             max-width: 5%;
             height: auto;
-            left: 35%;
+            left: 40%;
             top: 10%;
         }
         /*        firething animation end*/
@@ -330,9 +402,11 @@
     </div>
     <!--    Home Page Top start-->
     <div class="home">
+<!--
         <div class="left-cell">
             <img src="img/home/left-cell.png">
         </div>
+-->
 
         <!--        home background image stack start-->
         <img src="img/bg/bg-empty-lines-2.png" class="lines1">
@@ -344,6 +418,10 @@
         <img src="img/bg/main-cell.png" class="maincell">
         <img src="img/home/fire-thingy.png" class="firething">
         <img src="img/bg/bg-rocket.png" id="rocket">
+        <img src="img/home/Shapes.png" id="shapes">
+        <div class="bird" style="transform: rotate(20deg);"></div>
+        <div class="bird1"  style="transform: rotate(10deg);"></div>
+        <div class="bird2"  style="transform: rotate(-50deg);"></div>
         <!--        home background stack end-->
         <div class="cloud"></div>
         <div class="monster" style="transform: rotate(-40deg);"></div>
