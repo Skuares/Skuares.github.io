@@ -1,11 +1,5 @@
 /*Home section styling*/
 
-/*
-.Home {
-    background-color: #000;
-    max-width: 100%;
-}
-*/
 
 /*
 @media screen and (max-width: 900px) {
@@ -114,20 +108,31 @@
 /*<-HOME CSS ->*/
 
 .container {
-    padding-top: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
+    display: block;
+    width: 100%;
+    max-width: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #fff;
+    background-color: #000;
     position: relative;
     vertical-align: middle;
     text-align: center;
 }
-.container-aboutus {
-    padding-left: 60px;
-    padding-right: 60px;
+.container-top {
+    width: 60%;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+.container-top h1
+{
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 20px;
+
 }
 .container h2 {
     /*    overflow: auto;*/
