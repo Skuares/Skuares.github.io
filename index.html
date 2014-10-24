@@ -210,83 +210,91 @@
                 background-position: 2700% 0;
             }
         }
-    }
-    /*        squirel-dog end*/
-    /*        bunny start*/
-    .bunny {
-        display: block;
-        position: absolute;
-        top: 12%;
-        left: 78%;
-        width: 20%;
-        height: 0;
-        padding-bottom: 16%;
-        background-image: url("img/sprites/bunny-sprite.png");
-        background-position: 0 0;
-        background-size: 3600%;
-        animation: playbunny 1s steps(36);
-        animation-iteration-count: infinite;
-    }
-    @keyframes playbunny {
-        100% {
-            background-position: 3600% 0;
+        /*        squirel-dog end*/
+        /*        bunny start*/
+        .bunny {
+            display: block;
+            position: absolute;
+            top: 12%;
+            left: 78%;
+            width: 20%;
+            height: 0;
+            padding-bottom: 16%;
+            background-image: url("img/sprites/bunny-sprite.png");
+            background-position: 0 0;
+            background-size: 3600%;
+            animation: playbunny 1s steps(36);
+            animation-iteration-count: infinite;
         }
-    }
-    /*        bunny end*/
-    /*        new animation roll around*/
-    @keyframes rollaround {
-        /*            rollaround 3s ease-in-out infinite*/
-        0% {
-            transform: translate(0, 0px);
+        @keyframes playbunny {
+            100% {
+                background-position: 3600% 0;
+            }
         }
-        50% {
-            transform: translate(5, 15px);
+        /*        bunny end*/
+        /*        new animation roll around*/
+        @keyframes rollaround {
+            /*            rollaround 3s ease-in-out infinite*/
+            0% {
+                transform: translate(0, 0px);
+            }
+            50% {
+                transform: translate(5, 15px);
+            }
+            100% {
+                transform: translate(0, 10px);
+            }
         }
-        100% {
-            transform: translate(0, 10px);
+        /*        loader starts here*/
+        #loader {
+            z-index: 1999;
+            position: fixed;
+            top: 40%;
+            left: 45%;
+            width: 10%;
+            height: 0;
+            padding-bottom: 10%;
+            background-image: url("img/sprites/loader-sprite.png");
+            background-position: 0 0;
+            background-size: 800%;
+            animation: playloader .5s steps(8) infinite alternate;
+            display: block;
         }
-    }
-    /*        loader starts here*/
-    #loader {
-        z-index: 1999;
-        position: fixed;
-        top: 40%;
-        left: 45%;
-        width: 10%;
-        height: 0;
-        padding-bottom: 10%;
-        background-image: url("img/sprites/loader-sprite.png");
-        background-position: 0 0;
-        background-size: 800%;
-        animation: playloader .5s steps(8) infinite alternate;
-        display: block;
-    }
-    @keyframes playloader {
-        100% {
-            background-position: 800% 0;
+        @keyframes playloader {
+            100% {
+                background-position: 800% 0;
+            }
         }
-    }
-    /*        left cell start*/
-    .left-cell {
-        display: block;
-        position: absolute;
-        top: 30%;
-        left: -3%;
-    }
-    .left-cell img {
-        max-width: 70%;
-        max-height: auto;
-    }
-    /*        left cell end*/
-    #loaderwrap {
-        z-index: 1998;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: black;
-    }
+        /*        left cell start*/
+        .left-cell {
+            display: block;
+            position: absolute;
+            top: 30%;
+            left: -3%;
+        }
+        .left-cell img {
+            max-width: 70%;
+            max-height: auto;
+        }
+        /*        left cell end*/
+        /*        firething animation*/
+        .firething {
+            position: absolute;
+            max-width: 5%;
+            height: auto;
+            left: 35%;
+            top: 10%;
+        }
+        /*        firething animation end*/
+        #loaderwrap {
+            z-index: 1998;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: black;
+        }
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -312,35 +320,41 @@
 
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
+    <!--   Page Loader-->
     <div id="loaderwrap">
-        <p>Hyper loading</p>
         <div id="loader"></div>
     </div>
-
+    <!--mobile version-->
     <div class="home-small">
         <img src="img/home/Logo-hq.png" />
     </div>
+    <!--    Home Page Top start-->
     <div class="home">
         <div class="left-cell">
             <img src="img/home/left-cell.png">
         </div>
+
         <!--        home background image stack start-->
         <img src="img/bg/bg-empty-lines-2.png" class="lines1">
         <img src="img/bg/bg-empty-lines.png" class="cover-photo">
         <img src="img/bg/bg-cell.png" class="small-cell-left">
+        <img src="img/home/fishes.png" class="fishes">
+        <img src="img/home/cupcakes.png" class="cupcakes">
         <img src="img/bg/doted-lines1.png" class="doted-line1">
         <img src="img/bg/main-cell.png" class="maincell">
+        <img src="img/home/fire-thingy.png" class="firething">
         <img src="img/bg/bg-rocket.png" id="rocket">
         <!--        home background stack end-->
         <div class="cloud"></div>
         <div class="monster" style="transform: rotate(-40deg);"></div>
         <div class="cell" style="transform: rotate(-35deg);"></div>
         <div class="triangle" style="transform: rotate(35deg)"></div>
-        <div class="bunny"></div>
+
         <div class="squid"></div>
         <div class="squirel-dog" style="transform: rotate(-20deg)"></div>
         <div class="alien" style="transform: rotate(7deg);"></div>
-
+        <div class="bunny"></div>
+        <div class="bunny2"></div>
 
         <div class="logo">
             <img src="img/home/Logo-hq.png" />
