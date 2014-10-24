@@ -31,6 +31,9 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
+        body {
+            background-color: #000;
+        }
         .home {
             width: 100%;
             height: auto;
@@ -441,6 +444,7 @@
             $("#loaderwrap").fadeOut("slow");
         });
     </script>
+    <link rel="stylesheet" type="text/css" href="css/section2.css" />
 </head>
 
 <body>
@@ -497,22 +501,105 @@
         <div class="logo">
             <img src="img/home/Logo-hq.png" />
         </div>
-</div>
-        <div class="container">
-            <div class="container-top">
-                <h1>Skuares | Creative & Digital Studio</h1>
+    </div>
+    <div class="container">
+        <div class="container-top">
+            <h1>Skuares | Creative & Digital Studio</h1>
             <h2>
     <img src="img/slash.png"> 
     <span>Hello</span>
             </h2>
             <p>Passionate team of people who seek to create a smarter tomorrow, we are versatile and highly motivated. our specializations lay in artificial intelligence fields as well as web development, mobile applications and a broad number of other services due to the diverse background of our team.</p>
-            </div>
         </div>
-    
+    </div>
+    <!--     Section 2 starts-->
+    <div id="container" class="container">
+        <ul id="scene" class="scene">
+            <li class="layer moon" data-depth="1.00">
+                <img src="img/section2/Level0/Moon.png">
+            </li>
+            <li class="layer manonmoon" data-depth="0.95">
+                <img src="img/section2/Level0/Man-on-moon.png">
+            </li>
+            <li class="layer rocktop" data-depth="0.80">
+                <img src="img/section2/Level1/Rock-top.png">
+            </li>
+            <li class="layer rocktop-left" data-depth="0.84">
+                <img src="img/section2/Level1/Rock-top-left.png">
+            </li>
+            <li class="layer rocktop-left-1" data-depth="0.82">
+                <img src="img/section2/Level1/Rock-top-left-1.png">
+            </li>
+            <li class="layer rocktop-left-1-small" data-depth="0.90">
+                <img src="img/section2/Level1/Rock-top-left-1-small.png">
+            </li>
+            <li class="layer rocktop-right" data-depth="0.70">
+                <img src="img/section2/Level1/Rock-top-right.png">
+            </li>
+            <li class="layer rocktop-right-1" data-depth="0.75">
+                <img src="img/section2/Level1/rock-top-right-2.png">
+            </li>
+            <li class="layer rocktop-right-2" data-depth="0.70">
+                <img src="img/section2/Level1/rock-top-right-2.png">
 
+            </li>
+            <li class="layer mid-left" data-depth="0.60">
+                <img src="img/section2/Level2/mid-left.png">
+
+            </li>
+            <li class="layer mid-left-far" data-depth="0.60">
+                <img src="img/section2/Level2/mid-left-far.png">
+
+            </li>
+            <li class="layer rock-under-moon" data-depth="0.60">
+                <img src="img/section2/Level2/Rocks-under-moon.png">
+
+            </li>
+            <li class="layer" id="bunnypng" data-depth="0.50">
+                <img src="img/section2/Level3/Bunny.png">
+
+            </li>
+            <li class="layer" id="clock" data-depth="0.55">
+                <img src="img/section2/Level3/Clock.png">
+
+            </li>
+            <li class="layer" id="cupcakes" data-depth="0.51">
+                <img src="img/section2/Level3/cupcakes.png">
+
+            </li>
+            <li class="layer" id="drum" data-depth="0.51">
+                <img src="img/section2/Level3/Drum.png">
+                <li class="layer" id="eyesbottom" data-depth="0.2">
+                    <img src="img/section2/Level5/eyes-bottom.png">
+
+                </li>
+            </li>
+            <li class="layer" id="manundermoon" data-depth="0.40">
+                <img src="img/section2/Level4/man-under-moon.png">
+
+            </li>
+            <li class="layer" id="spacemantopleft" data-depth="0.40">
+                <img src="img/section2/Level4/spaceman-topleft.png">
+
+            </li>
+            <li class="layer" id="eyething" data-depth="0.9">
+                <img src="img/section2/Level5/Eye-shaped-thing.png">
+
+            </li>
+            <li class="layer" id="shapesscetion2" data-depth="0.1">
+                <img src="img/section2/Level6/Shapes.png">
+
+            </li>
+
+
+        </ul>
+    </div>
+    <!--section 2 end-->
     <div class="container-aboutus">
+
         <!-- Example row of columns -->
 
+        <!--
         <div class="row">
             <div class="col-md-4">
                 <h2>Heading</h2>
@@ -533,13 +620,17 @@
                 </p>
             </div>
         </div>
+-->
 
-        <hr>
+        <!--        <hr>-->
 
-        <footer>
-            <p>&copy; Company 2014</p>
-        </footer>
+        
     </div>
+<!--    footer-->
+    <footer class="footer">
+            <p>&copy; Skuares 2014</p>
+        </footer>
+<!--    footer end-->
     <!-- /container -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
@@ -550,6 +641,26 @@
 
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/vendor/jquery-1.11.1.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script>
+        //        resize
+        var viewportWidth = $(window).width();
+        var viewportHeight = $(window).height();
+
+        $('#container').css('height', viewportHeight + 'px');
+        $('#container').css('width', viewportWidth + 'px');
+
+        $(window).resize(function () {
+            var viewportWidth = $(window).width();
+            var viewportHeight = $(window).height();
+
+            $('#container').css('height', viewportHeight + 'px');
+            $('#container').css('width', viewportWidth + 'px');
+        });
+         // Yep, that's it!
+        $('#scene').parallax();
+    </script>
 
     <!--     Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
