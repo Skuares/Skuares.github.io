@@ -43,7 +43,7 @@
             position: relative;
             padding-bottom: 100px;
             margin: auto;
-            overflow-x:hidden;
+            overflow-x: hidden;
         }
         /*    cloud start*/
         .cloud {
@@ -505,13 +505,13 @@
         </div>
     </div>
     <div class="container">
-        
-            <h1>Skuares | Creative & Digital Studio</h1>
-            <h2>
+
+        <h1>Skuares | Creative & Digital Studio</h1>
+        <h2>
     <img src="img/slash.png"> 
     <span>Hello</span>
             </h2>
-            <p>Passionate team of people who seek to create a smarter tomorrow, we are versatile and highly motivated. our specializations lay in artificial intelligence fields as well as web development, mobile applications and a broad number of other services due to the diverse background of our team.</p>
+        <p>Passionate team of people who seek to create a smarter tomorrow, we are versatile and highly motivated. our specializations lay in artificial intelligence fields as well as web development, mobile applications and a broad number of other services due to the diverse background of our team.</p>
     </div>
     <!--     Section 2 starts-->
     <div id="container" class="container">
@@ -661,32 +661,32 @@
         });
          // Yep, that's it!
         $('#scene').parallax();
-        
-        //Resize to load small images 
-        $(function() {
-  if($(window).width() <= 1024) {
-    $("img").each(function() {
-      $(this).attr("src", $(this).attr("src").replace("img/", "imgMobile/"));
-    });
-  }
-});
+
+         //Resize to load small images 
+        $(function () {
+            if ($(window).width() <= 1024) {
+                $("img").each(function () {
+                    $(this).attr("src", $(this).attr("src").replace("img/", "imgMobile/"));
+                });
+            }
+        });
     </script>
 
     <!--     Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-        (function (b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l;
-            b[l] || (b[l] =
-                function () {
-                    (b[l].q = b[l].q || []).push(arguments)
-                });
-            b[l].l = +new Date;
-            e = o.createElement(i);
-            r = o.getElementsByTagName(i)[0];
-            e.src = '//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-56084729-1', 'auto');
         ga('send', 'pageview');
     </script>
 </body>
