@@ -91,6 +91,7 @@ input[type=checkbox]:checked + label:before {
     width: 10%;
     display: block;
     margin-bottom: 2em;
+    margin-left: 46%;
 }
 #logos {
     margin-top: 0.5em;
@@ -98,6 +99,14 @@ input[type=checkbox]:checked + label:before {
     margin-left: 47%;
     width: 8%;
     display: block;
+}
+#overengine
+{
+    position: absolute;
+    margin-left:43%;
+    width: 15%;
+    display: block;
+    opacity: 0.6;
 }
 /*Section3*/
 
