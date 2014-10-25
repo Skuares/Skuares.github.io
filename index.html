@@ -33,6 +33,7 @@
     <style>
         body {
             background-color: #000;
+            position: relative;
         }
         .home {
             width: 100%;
@@ -331,6 +332,16 @@
             }
         }
         /*        bird end*/
+        /*        Home background*/
+        .homebg {
+            position: absolute;
+            max-width: 100%;
+            height: auto;
+            left: auto;
+            top: 7%;
+            opacity: 0.7;
+        }
+        /*        Home background end*/
         /*        bunny start*/
         .bunny {
             display: block;
@@ -430,6 +441,7 @@
             right: 0;
             background: black;
         }
+        /*            Section 3 start styles*/
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -473,6 +485,7 @@
 -->
 
         <!--        home background image stack start-->
+        <img src="img/home/Background.png" alt="Empty line" class="homebg">
         <img src="img/bg/bg-empty-lines-2.png" alt="Empty line" class="lines1">
         <img src="img/bg/bg-empty-lines.png" class="cover-photo">
         <img src="img/bg/bg-cell.png" class="small-cell-left">
@@ -514,8 +527,11 @@
         <p>Passionate team of people who seek to create a smarter tomorrow, we are versatile and highly motivated. our specializations lay in artificial intelligence fields as well as web development, mobile applications and a broad number of other services due to the diverse background of our team.</p>
     </div>
     <!--     Section 2 starts-->
-    <div id="container" class="container">
-        <ul id="scene" class="scene">
+
+    <div id="container" class="container" >
+
+        <ul id="scene" class="scene" data-calibrate-x="false"
+  data-calibrate-y="true">
             <li class="layer moon" data-depth="1.00">
                 <img src="img/section2/Level0/Moon.png">
             </li>
@@ -594,10 +610,20 @@
 
 
         </ul>
+
     </div>
     <!--section 2 end-->
-    <div class="container-aboutus">
-
+    <!--    section 3 start-->
+    <div class="wrapsection3">
+        <img src="img/Section3/Top-Rocks.png" id="rocks">
+        <img src="img/Section3/Engine.png" id="engine">
+        <img src="img/Section3/Logo.png" id="logos">
+        <img src="img/Section3/Machine.png" id="machine">
+    </div>
+         <!--section 3 end-->
+<!--    <div class="container-aboutus">-->
+   
+        <!--        broken-->
         <!-- Example row of columns -->
 
         <!--
@@ -622,18 +648,25 @@
             </div>
         </div>
 -->
+        <!--        Section 3 Start-->
+
+
+        <!--        Section 3 end-->
 
         <!--        <hr>-->
-        <footer>
-            <p>&copy; Skuares 2014</p>
-        </footer>
 
-    </div>
+<!--    </div>-->
     <!--    footer-->
+
+    <footer style="position:absolute;
+	bottom:0;
+	left:0;" class="footer1">
+        <p>&copy; Skuares 2014</p>
+    </footer>
 
     <!--    footer end-->
     <!-- /container -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')
     </script>
@@ -645,20 +678,20 @@
     <script src="js/vendor/jquery-1.11.1.js"></script>
     <script src="js/jquery.parallax.js"></script>
     <script>
-        //        resize
-        var viewportWidth = $(window).width();
-        var viewportHeight = $(window).height();
-
-        $('#container').css('height', viewportHeight + 'px');
-        $('#container').css('width', viewportWidth + 'px');
-
-        $(window).resize(function () {
-            var viewportWidth = $(window).width();
-            var viewportHeight = $(window).height();
-
-            $('#container').css('height', viewportHeight + 'px');
-            $('#container').css('width', viewportWidth + 'px');
-        });
+//        //        resize
+//        var viewportWidth = $(window).width();
+//        var viewportHeight = $(window).height();
+//
+//        $('#container').css('height', viewportHeight + 'px');
+//        $('#container').css('width', viewportWidth + 'px');
+//
+//        $(window).resize(function () {
+//            var viewportWidth = $(window).width();
+//            var viewportHeight = $(window).height();
+//
+//            $('#container').css('height', viewportHeight + 'px');
+//            $('#container').css('width', viewportWidth + 'px');
+//        });
          // Yep, that's it!
         $('#scene').parallax();
 
@@ -684,7 +717,7 @@
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-56084729-1', 'auto');
         ga('send', 'pageview');

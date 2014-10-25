@@ -7,6 +7,7 @@ body {
     margin: 0;
 }
 */
+
 .scene img {
     display: block;
     width: 100%;
@@ -40,6 +41,7 @@ button {
     left: 10%;
 }
 */
+
 /*
 button:hover {
     background: #00FFAA;
@@ -58,11 +60,58 @@ input[type=checkbox]:checked + label:before {
     background: #00FFAA;
 }
 */
+
+/*Section3*/
+
+.wrapsection3 {
+    display: block;
+    max-width: 80%;
+    position: relative;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+.wrapsection3 img {
+    height: auto;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+#rocks {
+    width: 50%;
+    display: block;
+}
+#engine {
+    width: 40%;
+    display: block;
+}
+#machine {
+    width: 10%;
+    display: block;
+    margin-bottom: 2em;
+}
+#logos {
+    margin-top: 0.5em;
+    margin-bottom: 0.9em;
+    margin-left: 47%;
+    width: 8%;
+    display: block;
+}
+/*Section3*/
+
 .container {
     position: relative;
     max-width: 60%%;
-    margin: 0 auto;
     padding: 5%;
+    position: relative;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
 }
 .scene {
     padding: 0;
@@ -231,34 +280,30 @@ input[type=checkbox]:checked + label:before {
     width: 17%;
     opacity: 1;
 }
-#spacemantopleft
-{
+#spacemantopleft {
     position: absolute;
     margin-top: 20%;
     margin-left: 10%;
     width: 15%;
     opacity: 1;
 }
-#eyesbottom
-{
-   position: absolute;
+#eyesbottom {
+    position: absolute;
     margin-top: 76%;
     width: 70%;
-    opacity: 0.8    ; 
+    opacity: 0.8;
 }
-#eyething
-{
-   position: absolute;
+#eyething {
+    position: absolute;
     margin-top: 26%;
     margin-left: -1%;
     width: 10%;
-    opacity: 1;  
+    opacity: 1;
 }
-#shapesscetion2
-{
+#shapesscetion2 {
     position: absolute;
     margin-top: 5%;
     width: 100%;
-    opacity: 1; 
+    opacity: 1;
 }
 /*End stack*/
