@@ -14,11 +14,10 @@
 }
 */
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400");
-
-h1, p {
-    font: 100 1em/1.5em 'Lato';
-    font: Ultra-Light 100 1em/1.5em 'Lato';
-    font: Ultra-Light 100 1em/1.5em 'Lato', sans-serif;
+ p {
+    
+    font-family: lato;
+    font-weight: 400;
 }
 .footer1 {
     font-family: 'Lato', sans-serif;
