@@ -251,16 +251,15 @@ h1, p {
 	margin:0 0 1.5em 0;
 	padding:0;
 }
-ul.address{
+ul.infocontact{
 	margin:0;
 	padding:0;
 }
-ul.address li{
+ul.infocontact li{
 	display:block;
 	font-size:1em;
-	font-family: 'Asap', sans-serif;
-	font-style:italic;
-	color:#FFF;
+	font-family: lato;
+	color:#fff;
 	margin:0.8em 0;
 }
 ul.social-icons{
@@ -275,35 +274,36 @@ ul.social-icons li a{
 	margin:0 2em 0 0; 
 }
 ul.social-icons li a span{
-	width:22px;
-	height:22px;
+	width:30px;
+	height:30px;
 	display:inline-block;
 	background:url(../images/social-icons.png) no-repeat 0px 0px;
 }
 ul.social-icons li a span.facebook{
 	background-position: 4px 0px;
+    background:url(../img/social/facebook-iso-white.png) no-repeat 0px 0px;
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
 }
 ul.social-icons li a:hover span.facebook{
-	background-position: 4px -22px;
+	background:url(../img/social/facebook-iso-color.png) no-repeat;
 }
-ul.social-icons li a span.twitter{
-	background-position: -54px 2px;
+ul.social-icons li a span.linkedin{
+	background:url(../img/social/linkedin-iso-white.png) no-repeat;
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
 }
-ul.social-icons li a:hover span.twitter{
-	background-position: -54px -20px;
+ul.social-icons li a:hover span.linkedin{
+background:url(../img/social/linkedin-iso-color.png) no-repeat;
+    
 }
-ul.social-icons li a span.vimeo{
-	background-position: -117px 1px;
-}
-ul.social-icons li a:hover span.vimeo{
-	background-position: -117px -21px;
-}
-ul.social-icons li a span.behance{
-	background-position: -177px 1px;
-}
-ul.social-icons li a:hover span.behance{
-	background-position: -177px -21px;
-}
+
 .text-box input[type="text"],.subject-box textarea{
 	width:100%;
 	padding:0.8em;
