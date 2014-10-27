@@ -83,6 +83,15 @@
             overflow-x: hidden;
             overflow-y: hidden;
         }
+        .smallhome {
+            width: 95%;
+            height: auto;
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
         /*    cloud start*/
         .cloud {
             display: block;
@@ -376,7 +385,7 @@
             height: auto;
             left: auto;
             top: 7%;
-            opacity: 0.7;
+            opacity: 0.3;
         }
         /*        Home background end*/
         /*        bunny start*/
@@ -484,7 +493,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300italic' rel='stylesheet' type='text/css'>
-
+    
 
     <!--here-->
     <script src="js/prefixfree.min.js"></script>
@@ -517,6 +526,7 @@
     </div>
     <!--    Home Page Top start-->
     <div class="home">
+        <img src="img/home/Background.png" alt="Empty line" class="homebg">
         <!--
         <div class="left-cell">
             <img src="img/home/left-cell.png">
@@ -524,36 +534,37 @@
 -->
 
         <!--        home background image stack start-->
-        <img src="img/home/Background.png" alt="Empty line" class="homebg">
-        <img src="img/bg/bg-empty-lines-2.png" alt="Empty line" class="lines1">
-        <img src="img/bg/bg-empty-lines.png" class="cover-photo">
-        <img src="img/bg/bg-cell.png" class="small-cell-left">
-        <img src="img/bg/bg-rocket.png" id="rocket">
-        <img src="img/home/fishes.png" class="fishes">
-        <img src="img/home/cupcakes.png" class="cupcakes">
-        <img src="img/bg/doted-lines1.png" class="doted-line1">
-        <img src="img/bg/main-cell.png" class="maincell">
-        <img src="img/home/fire-thingy.png" class="firething">
-        <img src="img/home/mushroom.png" id="mushroom">
-        <img src="img/home/Shapes.png" id="shapes">
-        <div class="bird" style="transform: rotate(20deg);"></div>
-        <div class="bird1" style="transform: rotate(10deg);"></div>
-        <div class="bird2" style="transform: rotate(-50deg);"></div>
-        <!--        home background stack end-->
-        <div class="cloud"></div>
-        <div class="square-boy"></div>
-        <div class="monster" style="transform: rotate(-40deg);"></div>
-        <div class="cell" style="transform: rotate(-35deg);"></div>
-        <div class="triangle" style="transform: rotate(35deg)"></div>
-        <div class="squid"></div>
-        <div class="squirel-dog" style="transform: rotate(-20deg)"></div>
-        <div class="alien" style="transform: rotate(7deg);"></div>
-        <div class="bunny"></div>
-        <div class="bunny2"></div>
-        <div class="squid-alien"></div>
+        <div class="smallhome">
+            <img src="img/bg/bg-empty-lines-2.png" alt="Empty line" class="lines1">
+            <img src="img/bg/bg-empty-lines.png" class="cover-photo">
+            <img src="img/bg/bg-cell.png" class="small-cell-left">
+            <img src="img/bg/bg-rocket.png" id="rocket">
+            <img src="img/home/fishes.png" class="fishes">
+            <img src="img/home/cupcakes.png" class="cupcakes">
+            <img src="img/bg/doted-lines1.png" class="doted-line1">
+            <img src="img/bg/main-cell.png" class="maincell">
+            <img src="img/home/fire-thingy.png" class="firething">
+            <img src="img/home/mushroom.png" id="mushroom">
+            <img src="img/home/Shapes.png" id="shapes">
+            <div class="bird" style="transform: rotate(20deg);"></div>
+            <div class="bird1" style="transform: rotate(10deg);"></div>
+            <div class="bird2" style="transform: rotate(-50deg);"></div>
+            <!--        home background stack end-->
+            <div class="cloud"></div>
+            <div class="square-boy"></div>
+            <div class="monster" style="transform: rotate(-40deg);"></div>
+            <div class="cell" style="transform: rotate(-35deg);"></div>
+            <div class="triangle" style="transform: rotate(35deg)"></div>
+            <div class="squid"></div>
+            <div class="squirel-dog" style="transform: rotate(-20deg)"></div>
+            <div class="alien" style="transform: rotate(7deg);"></div>
+            <div class="bunny"></div>
+            <div class="bunny2"></div>
+            <div class="squid-alien"></div>
 
-        <div class="logo">
-            <img src="img/home/Logo-hq.png" />
+            <div class="logo">
+                <img src="img/home/Logo-hq.png" />
+            </div>
         </div>
     </div>
     <div class="container">
@@ -647,21 +658,20 @@
                 <img src="img/Section2/Level6/Shapes.png">
 
             </li>
-
-
         </ul>
-
     </div>
+
     <!--section 2 end-->
-    <!--    section 3 start-->
+
+    <!--    section 3 the machine start-->
     <div class="wrapsection3">
         <img src="img/Section3/Top-Rocks.png" id="rocks">
         <img src="img/Section3/Engine.png" id="engine">
         <img src="img/Section3/Logo.png" id="logos">
         <img src="img/Section3/Machine.png" id="machine">
     </div>
-    <!--section 3 end-->
-    <!--    <div class="container-aboutus">-->
+    <!--section 3 the machine end-->
+
 
     <!-- About Us -->
     <div class="aboutustext services text-center">
@@ -672,28 +682,29 @@
     <div class="row">
         <div class="service-grids">
             <div class="col-md-4 service-grid text-center">
-                <span class="s-icon"> </span>
+                <!--                <span class="s-icon"> </span>-->
+                <img src="img/icons/design.png" style="width: 30%;">
                 <h4>DESIGN</h4>
-                <p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                <p>Clean, professional design in any from you may require, Business Cards, Stationery, Brochures, you name it - we can do it!</p>
             </div>
             <div class="col-md-4 service-grid text-center">
-                <span class="s-icon1"> </span>
+                <!--                <span class="s-icon1"> </span>-->
+                <img src="img/icons/web.png" style="width: 30%;">
                 <h4>WEB DEVELOPMENT</h4>
-                <p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                <p>Be it a website, web application or anything that runs online, tell us about your requirements, we’ll study it, embrace it, and develop it with the latest technologies and trends with an impressive visual experience that will make your users smile.</p>
             </div>
             <div class="col-md-4 service-grid text-center">
-                <span class="s-icon2"> </span>
+                <!--                <span class="s-icon2"> </span>-->
+                <img src="img/icons/apps.png" style="width: 30%;">
                 <h4>APP DESIGN</h4>
-                <p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                <p>We build fun, creative apps across all major platforms, drop us a message to enquire about our capabilities and pricing</p>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
     <!--About Us end-->
-
-    <!--        <hr>-->
-
-    <!--    </div>-->
+ 
+    <!--    contact us start-->
     <div id="contact" class="contact">
         <div class="aboutustext services text-center">
             <h1 id="h1text" class="text-center">Contact </h1>
@@ -721,23 +732,23 @@
                 </ul>
             </div>
             <div class="col-md-8 contact-right">
-                <form>
+                <form name="contactform" method="post" action="resources/sendemail.php">
                     <div class="text-boxs">
                         <div class="text-box">
-                            <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+                            <input name="name" type="text" value="Name" required onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
                         </div>
                         <div class="text-box">
-                            <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+                            <input type="email" value="email" name="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required placeholder="Enter a valid email address">
                         </div>
                         <div class="text-box">
-                            <input type="text" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}">
+                            <input type="text" value="Telephone" name="telephone" onfocus="this.value = 'value';" onblur="if (this.value == '') {this.value = 'Telephone';}">
                         </div>
                         <div class="text-box">
-                            <input type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+                            <input type="text" value="Subject" name="subject" required onfocus="this.value = 'value';" onblur="if (this.value == '') {this.value = 'Subject';}">
                         </div>
                     </div>
                     <div class="subject-box">
-                        <textarea>Message</textarea>
+                        <textarea name="textbox" required>Message</textarea>
                     </div>
                     <input type="submit" value="Send">
                 </form>
@@ -746,9 +757,8 @@
         </div>
         <!-- contact-grids -->
     </div>
-    </div>
-
-
+    <!--contact us end-->
+   
 
     <!--    footer-->
 
@@ -783,6 +793,7 @@
          //            $('#container').css('height', viewportHeight + 'px');
          //            $('#container').css('width', viewportWidth + 'px');
          //        });
+
          // Yep, that's it!
         $('#scene').parallax();
 

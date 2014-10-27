@@ -1,19 +1,19 @@
-/*Home section styling*/
 
-/*
-@media screen and (max-width: 900px) {
-    .home {
-        display: none;
-    }
-    .home-small {
-        display: block !important;
-    }
-    .cover-photo {
-        display: none;
+@media (min-width: 768px) {
+    .containercontact {
+        width: 750px;
     }
 }
-*/
-
+@media (min-width: 992px) {
+    .containercontact {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .containercontact {
+        width: 1170px;
+    }
+}
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400");
  html {
     -webkit-font-smoothing: antialiased;
@@ -71,15 +71,15 @@ p {
     position: absolute;
     max-width: 70%;
     height: auto;
-    left: 10%;
-    top: 3%;
+    left: 19%;
+    top: 5%;
 }
 #rocket {
     position: absolute;
-    max-width: 48%;
+    max-width: 42%;
     height: auto;
-    left: 20%;
-    top: 10%;
+    left: 23%;
+    top: 15%;
 }
 .maincell {
     position: absolute;
@@ -180,8 +180,9 @@ p {
     font-family: 'Asap', sans-serif;
 }
 .service-grid span {
-    width: 65px;
-    height: 64px;
+    
+    width: 70px;
+    height: 70px;
     display: inline-block;
     background: url(../img/service-icons.png) no-repeat 4px 0px;
 }
@@ -199,7 +200,7 @@ p {
     margin: 1em auto 0 auto;
 }
 .service-grid span.s-icon {
-    background-position: 4px 0px;
+        background-position: 4px 0px;
 }
 .service-grid:hover span.s-icon {
     background-position: -209px 0px;
@@ -338,6 +339,30 @@ ul.social-icons li a:hover span.linkedin {
 .subject-box textarea:hover {
     border-color: #333;
 }
+.text-box input[type="email"],
+.subject-box textarea {
+    width: 100%;
+    padding: 0.8em;
+    background: #fff;
+    border-top: 2px solid #1e2429;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    outline: none;
+    font-size: 0.875em;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    color: #333;
+    font-family: 'Asap', sans-serif;
+    font-size: 1em;
+}
+.text-box input[type="email"]:hover,
+.subject-box textarea:hover {
+    border-color: #333;
+}
 .subject-box textarea {
     resize: none;
     min-height: 180px;
@@ -383,28 +408,4 @@ ul.social-icons li a:hover span.linkedin {
     color: #fff;
     margin: 4em 0 1em;
 }
-/*--*/
 
-@media (min-width: 768px) {
-    .containercontact {
-        width: 750px;
-    }
-}
-@media (min-width: 992px) {
-    .containercontact {
-        width: 970px;
-    }
-}
-@media (min-width: 1200px) {
-    .containercontact {
-        width: 1170px;
-    }
-}
-/*
-.aboutustext
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-}*/
