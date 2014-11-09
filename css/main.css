@@ -427,7 +427,6 @@ ul.social-icons li a:hover span.linkedin {
     height: 100%;
     opacity: 0;
     background: rgba(0,0,0,.8);
-    
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
