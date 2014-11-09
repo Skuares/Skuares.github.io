@@ -41,7 +41,6 @@ p {
     display: relative;
 }
 /*<-HOME CSS ->*/
-
 .home-small {
     display: none;
     width: 100%;
@@ -67,19 +66,34 @@ p {
     height: auto;
     margin: 0 0 10px 0;
 }
+.fulls
+{
+    position: absolute;
+    max-width: 100%;
+    opacity: 0.7;
+}
+#goat
+{
+position: absolute;
+    max-width: 8%;
+    height: auto;
+    left: 25%;
+    top: 48%;    
+}
 .lines1 {
     position: absolute;
     max-width: 70%;
     height: auto;
-    left: 19%;
-    top: 5%;
+    left: 24%;
+    top: 10%;
+    opacity: 
 }
 #rocket {
     position: absolute;
-    max-width: 42%;
+    max-width: 48%;
     height: auto;
-    left: 23%;
-    top: 15%;
+    left: 16%;
+    top: 5.5%;
 }
 .maincell {
     position: absolute;
@@ -97,31 +111,31 @@ p {
 }
 .small-cell-left {
     position: absolute;
-    max-width: 17%;
+    max-width: 24%;
     height: auto;
-    left: 9%;
-    top: 47%;
+    left: 7%;
+    top: 57%;
 }
 .cupcakes {
     position: absolute;
     max-width: 10%;
     height: auto;
     left: 7%;
-    top: 55%;
+    top: 74%;
 }
 .fishes {
     position: absolute;
-    max-width: 15%;
+    max-width: 16%;
     height: auto;
-    left: 20%;
-    top: 13%;
+    left: 16%;
+    top: 10%;
 }
 #mushroom {
     position: absolute;
     max-width: 5%;
     height: auto;
     left: 68%;
-    top: 13%;
+    top: 26%;
 }
 #shapes {
     position: absolute;

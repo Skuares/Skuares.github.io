@@ -97,11 +97,11 @@
         .cloud {
             display: block;
             position: absolute;
-            top: 30%;
-            left: 12%;
-            width: 15%;
+            top: 40%;
+            left: 14%;
+            width: 13%;
             height: 0;
-            padding-top: 15%;
+            padding-top: 13%;
             background-image: url("img/sprites/le-cloud-hq.png");
             background-position: 0 0;
             background-size: 1800%;
@@ -120,7 +120,7 @@
         /*    monster start*/
         .monster {
             position: absolute;
-            top: 61%;
+            top: 73%;
             left: 20%;
             width: 15%;
             height: 0;
@@ -146,11 +146,11 @@
         .cell {
             display: block;
             position: absolute;
-            top: 61%;
+            top: 71%;
             left: 63%;
-            width: 15%;
+            width: 17%;
             height: 0;
-            padding-bottom: 15%;
+            padding-bottom: 17%;
             background-image: url("img/sprites/cell-sprite.png");
             background-position: 0 0;
             background-size: 2500%;
@@ -168,10 +168,10 @@
             display: block;
             position: absolute;
             top: 63%;
-            left: 87%;
-            width: 12%;
+            left: 79%;
+            width: 15%;
             height: 0;
-            padding-bottom: 12%;
+            padding-bottom: 15%;
             background-image: url("img/sprites/squid-alien-sprite.png");
             background-position: 0 0;
             background-size: 2000%;
@@ -191,11 +191,11 @@
         .triangle {
             display: block;
             position: absolute;
-            top: 38%;
-            left: 67%;
-            width: 15%;
+            top: 40%;
+            left: 59%;
+            width: 24%;
             height: 0;
-            padding-bottom: 12%;
+            padding-bottom: 20%;
             background-image: url("img/sprites/triangle-sprite.png");
             background-position: 0 0;
             background-size: 2000%;
@@ -256,11 +256,11 @@
         .square-boy {
             display: block;
             position: absolute;
-            top: 50%;
-            left: 80%;
-            width: 10%;
+            top: 52%;
+            left: 85%;
+            width: 12%;
             height: 0;
-            padding-bottom: 10%;
+            padding-bottom: 12%;
             background-image: url("img/sprites/box-boy-sprite.png");
             background-position: 0 0;
             background-size: 1500%;
@@ -280,11 +280,11 @@
         .alien {
             display: block;
             position: absolute;
-            top: 15%;
-            left: 10%;
-            width: 10%;
+            top: 19%;
+            left: 7%;
+            width: 15%;
             height: 0;
-            padding-bottom: 10%;
+            padding-bottom: 15%;
             background-image: url("img/sprites/alien-sprites.png");
             background-position: 0 0;
             background-size: 700%;
@@ -301,8 +301,8 @@
         .squirel-dog {
             display: block;
             position: absolute;
-            top: 5%;
-            left: 46%;
+            top: 4%;
+            left: 48%;
             width: 13%;
             height: 0;
             padding-bottom: 13%;
@@ -338,8 +338,8 @@
         .bird1 {
             display: block;
             position: absolute;
-            top: 40%;
-            left: 7%;
+            top: 26%;
+            left: 5%;
             width: 5%;
             height: 0;
             padding-bottom: 5%;
@@ -351,7 +351,7 @@
         .bird2 {
             display: block;
             position: absolute;
-            top: 68%;
+            top: 82%;
             left: 80%;
             width: 6%;
             height: 0;
@@ -386,7 +386,7 @@
             height: auto;
             left: auto;
             top: 7%;
-            opacity: 0.3;
+            opacity: 1;
         }
         /*        Home background end*/
         /*        bunny start*/
@@ -394,10 +394,10 @@
             display: block;
             position: absolute;
             top: 12%;
-            left: 70%;
-            width: 20%;
+            left: 73%;
+            width: 24%;
             height: 0;
-            padding-bottom: 16%;
+            padding-bottom: 20%;
             background-image: url("img/sprites/bunny-sprite.png");
             background-position: 0 0;
             background-size: 3600%;
@@ -531,17 +531,13 @@
     </div>
     <!--    Home Page Top start-->
     <div class="home">
-        <img src="img/home/Background.png" alt="Empty line" class="homebg">
-        <!--
-        <div class="left-cell">
-            <img src="img/home/left-cell.png">
-        </div>
--->
-
+        <img src="img/bg/Colored-lines.png" alt="Empty line" class="homebg">
+        
         <!--        home background image stack start-->
         <div class="smallhome">
+<!--            <img src="img/ref.jpg" alt="Empty line" class="fulls">-->
             <img src="img/bg/bg-empty-lines-2.png" alt="Empty line" class="lines1">
-            <img src="img/bg/bg-empty-lines.png" class="cover-photo">
+            <img src="img/bg/bg-empty-lines.png" class="cover-photo" style="opacity: 0;">
             <img src="img/bg/bg-cell.png" class="small-cell-left">
             <img src="img/bg/bg-rocket.png" id="rocket">
             <img src="img/home/fishes.png" class="fishes">
@@ -552,21 +548,22 @@
             <img src="img/home/mushroom.png" id="mushroom">
             <img src="img/home/Shapes.png" id="shapes">
             <div class="bird" style="transform: rotate(20deg);"></div>
-            <div class="bird1" style="transform: rotate(10deg);"></div>
-            <div class="bird2" style="transform: rotate(-50deg);"></div>
-            <!--        home background stack end-->
+            <div class="bird1" style="transform: rotate(19deg);"></div>
+            <div class="bird2" style="transform: rotate(-54deg);"></div>
             <div class="cloud"></div>
-            <div class="square-boy"></div>
+            <div class="square-boy" style="transform: rotate(-3deg);"></div>
             <div class="monster" style="transform: rotate(-40deg);"></div>
             <div class="cell" style="transform: rotate(-35deg);"></div>
-            <div class="triangle" style="transform: rotate(35deg)"></div>
+            <div class="triangle" style="transform: rotate(25deg)"></div>
             <div class="squid"></div>
-            <div class="squirel-dog" style="transform: rotate(-20deg)"></div>
-            <div class="alien" style="transform: rotate(7deg);"></div>
+            <div class="squirel-dog" style="transform: rotate(-40deg)"></div>
+            <div class="alien" style="transform: rotate(12deg);"></div>
             <div class="bunny"></div>
             <div class="bunny2"></div>
             <div class="squid-alien"></div>
-
+            <img src="img/home/goat-thing.png" id="goat">
+            
+<!--        home background stack end-->
             <div class="logo">
                 <img src="img/home/Logo-hq.png" />
             </div>
