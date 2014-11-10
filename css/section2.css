@@ -1,65 +1,9 @@
-/*
-body {
-    font-family: monospace;
-    font-size: 18px;
-    background: #111;
-    color: #666;
-    margin: 0;
-}
-*/
+
 
 .scene img {
     display: block;
     width: 100%;
 }
-/*
-input[type=checkbox] {
-    display: none;
-}
-label {
-    display: inline-block;
-    margin-right: 1em;
-    padding: 0.4em 0;
-    cursor: pointer;
-}
-button {
-    border: 10px solid #00FFAA;
-    font-family: monospace;
-    position: absolute;
-    line-height: 60px;
-    text-align: right;
-    padding: 0 1.2em;
-    background: #444;
-    font-size: 24px;
-    cursor: pointer;
-    display: block;
-    outline: none;
-    height: 80px;
-    width: 80%;
-    top: 260px;
-    margin: 0;
-    left: 10%;
-}
-*/
-
-/*
-button:hover {
-    background: #00FFAA;
-}
-input[type=checkbox] + label:before {
-    display: inline-block;
-    position: relative;
-    background: #444;
-    margin-right: 8px;
-    content: "";
-    height: 16px;
-    width: 16px;
-    top: 1px;
-}
-input[type=checkbox]:checked + label:before {
-    background: #00FFAA;
-}
-*/
 
 /*Section3*/
 
@@ -112,14 +56,12 @@ input[type=checkbox]:checked + label:before {
 
 .container {
     position: relative;
-    max-width: 60%%;
+    max-width: 70%;
     padding: 5%;
-    position: relative;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
-
     margin: auto;
 }
 .scene {
