@@ -1,10 +1,7 @@
 <?php
  
 if(isset($_POST['email'])) {
- 
-     
- 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
+
  
     $email_to = "enquiry@skuares.com";
  
@@ -16,7 +13,7 @@ if(isset($_POST['email'])) {
  
     function died($error) {
  
-        // your error code can go here
+        
  
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
  
@@ -32,7 +29,7 @@ if(isset($_POST['email'])) {
  
      
  
-    // validation expected data exists
+    
  
     if(!isset($_POST['Name']) ||
  

@@ -88,7 +88,9 @@
             height: auto;
             max-width: 100%;
             position: relative;
+            margin-top: 10%;
             margin: auto;
+/*            padding-top: 10%;*/
             overflow-x: hidden;
             overflow-y: hidden;
         }
@@ -104,7 +106,7 @@
             background-image: url("img/sprites/le-cloud-hq.png");
             background-position: 0 0;
             background-size: 1800%;
-            animation: hovereffect 2s ease-in-out infinite;
+            animation: hovereffect 6s ease-in-out infinite;
         }
         .cloud:hover {
             animation: hovereffect 2s ease-in-out infinite, playcloud .9s steps(18);
@@ -145,14 +147,17 @@
         .cell {
             display: block;
             position: absolute;
-            top: 71%;
-            left: 63%;
-            width: 17%;
+            top: 76%;
+            left: 68%;
+            width: 12%;
             height: 0;
-            padding-bottom: 17%;
+            padding-bottom: 12%;
             background-image: url("img/sprites/cell-sprite.png");
             background-position: 0 0;
             background-size: 2500%;
+        }
+        .cell:hover
+        {
             animation: playcell 1s steps(25);
             animation-iteration-count: 250;
         }
@@ -221,6 +226,9 @@
             background-image: url("img/sprites/squid-sprite.png");
             background-position: 0 0;
             background-size: 1200%;
+        }
+        .squid:hover
+        {
             animation: roll 9s ease-in-out infinite, playsquid .9s steps(12) infinite;
         }
         @keyframes hovereffect {
@@ -287,6 +295,9 @@
             background-image: url("img/sprites/alien-sprites.png");
             background-position: 0 0;
             background-size: 700%;
+        }
+        .alien:hover
+        {
             animation: playalien 1.3s steps(7);
             animation-iteration-count: infinite;
         }
@@ -394,13 +405,15 @@
             display: block;
             position: absolute;
             top: 12%;
-            left: 73%;
-            width: 24%;
-            height: 0;
-            padding-bottom: 20%;
+            left: 38%;
+            width: 27%;
+            padding-bottom: 21%;
             background-image: url("img/sprites/bunny-sprite.png");
             background-position: 0 0;
             background-size: 3600%;
+        }
+        .bunny:hover
+        {
             animation: playbunny 1s steps(36);
             animation-iteration-count: infinite;
         }
@@ -431,7 +444,7 @@
             left: 45%;
             width: 10%;
             height: 0;
-            padding-bottom: 10%;
+            padding-bottom: 9.9%;
             background-image: url("img/sprites/loader-sprite.png");
             background-position: 0 0;
             background-size: 800%;
@@ -531,15 +544,17 @@
     </div>
     <!--    Home Page Top start-->
     <div class="home">
-        <img src="img/bg/Colored-lines.png" alt="Empty line" class="homebg">
+<!--        <img src="img/bg/Colored-lines.png" alt="Empty line" class="homebg">-->
         
         <!--        home background image stack start-->
         <div class="smallhome">
-            <img src="img/bg/bg-empty-lines-2.png" alt="Empty line" class="fulls">
-            <img src="img/bg/bg-empty-lines-2.png" alt="Empty line" class="lines1">
+<!--            <img src="img/bg/bg-empty-lines-2.png" alt="Empty line" class="fulls">-->
+<!--            <img src="img/bg/bg-empty-lines-2.png" alt="Empty line" class="lines1">-->
             <img src="img/bg/bg-empty-lines.png" class="cover-photo" style="opacity: 0;">
-            <img src="img/bg/bg-cell.png" class="small-cell-left">
             <img src="img/bg/bg-rocket.png" id="rocket">
+         <!--   <img src="img/bg/bg-cell.png" class="small-cell-left">
+
+            
             <img src="img/home/fishes.png" class="fishes">
             <img src="img/home/cupcakes.png" class="cupcakes">
             <img src="img/bg/doted-lines1.png" class="doted-line1">
@@ -558,12 +573,15 @@
             <div class="squid"></div>
             <div class="squirel-dog" style="transform: rotate(-40deg)"></div>
             <div class="alien" style="transform: rotate(12deg);"></div>
+-->
             <div class="bunny"></div>
+<!--
             <div class="bunny2"></div>
             <div class="squid-alien"></div>
             <img src="img/home/goat-thing.png" id="goat">
             <img src="img/home/ufo.png" id="ufo">
             
+-->
 <!--        home background stack end-->
             <div class="logo">
                 <img src="img/home/Logo-hq.png" />
@@ -579,7 +597,7 @@
     font-weight: 400;">Hello</span>
             </h2>
         <p style="font-family: lato;
-    font-weight: 300;">Passionate team of people who seek to create a smarter tomorrow, we are versatile and highly motivated. our specializations lay in artificial intelligence fields as well as web development, mobile applications and a broad number of other services due to the diverse background of our team.</p>
+    font-weight: 300;">We are a passionate team of people who seek to create a smarter tomorrow,our unique set of skills and motivation drives to innovate and create epic thing. we specialize in artificial intelligence fields as well as web development, mobile applications and a broad number of other services due to the diverse background of our team.</p>
     </div>
     
     <!--     Section 2 starts-->
@@ -683,19 +701,19 @@
     <div class="row">
         <div class="service-grids">
             <div class="col-md-4 service-grid text-center">
-                <!--                <span class="s-icon"> </span>-->
+               
                 <img src="img/icons/design.png" style="width: 30%;">
                 <h4>DESIGN</h4>
                 <p>Clean, professional design in any from you may require, Business Cards, Stationery, Brochures, you name it - we can do it!</p>
             </div>
             <div class="col-md-4 service-grid text-center">
-                <!--                <span class="s-icon1"> </span>-->
+                
                 <img src="img/icons/web.png" style="width: 30%;">
                 <h4>WEB DEVELOPMENT</h4>
                 <p>Be it a website, web application or anything that runs online, tell us about your requirements, we’ll study it, embrace it, and develop it with the latest technologies and trends with an impressive visual experience that will make your users smile.</p>
             </div>
             <div class="col-md-4 service-grid text-center">
-                <!--                <span class="s-icon2"> </span>-->
+                
                 <img src="img/icons/apps.png" style="width: 30%;">
                 <h4>APP DESIGN</h4>
                 <p>We build fun, creative apps across all major platforms, drop us a message to enquire about our capabilities and pricing</p>
@@ -808,13 +826,19 @@
                     </div>
                 </div>
             </div>
+            <div style="max-width: 80%; margin: 0 auto;">
+  <div id="inked-painted">
+    <img src="img/Concept-art/Concept-Art-light.jpg" id="inked" alt="">
+    <div id="colored"></div>
+                              </div></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Project Title</h2>
                              
-                            <img alt="image" src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                         
+
                             <p>Use this area of the page to describe your project. </p>
                         </div>
                     </div>
@@ -946,7 +970,7 @@
                             <input name="name" type="text" value="Name" required onfocus="if (this.value == 'Name') {this.value = '';}" placeholder="Enter your name" onblur="if (this.value == '') {this.value = 'Name';}">
                         </div>
                         <div class="text-box">
-                            <input type="email" value="email" name="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required placeholder="Enter a valid email address">
+                            <input type="email" value="email" name="email" required onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required placeholder="Enter a valid email address">
                         </div>
                         <div class="text-box">
                             <input type="text" value="Telephone" name="telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}">
@@ -975,15 +999,14 @@
     <!--    footer end-->
     
     <!-- /container -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')
     </script>
-
+    
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/vendor/jquery-1.11.1.js"></script>
     <script src="js/jquery.parallax.js"></script>
     <script>
          // Yep, that's it!
@@ -997,6 +1020,22 @@
                 });
             }
         });
+    </script>
+<!--    Slider script-->
+    <script>
+        var inkbox = document.getElementById("inked-painted");
+var colorbox = document.getElementById("colored");
+var fillerImage = document.getElementById("inked");
+inkbox.addEventListener("mousemove",trackLocation,false);
+inkbox.addEventListener("touchstart",trackLocation,false);
+inkbox.addEventListener("touchmove",trackLocation,false);
+
+function trackLocation(e)
+{
+	var rect = inked.getBoundingClientRect();
+	var position = ((e.pageX - rect.left) / inked.offsetWidth)*100;
+	if (position <= 100) { colorbox.style.width = position+"%"; }
+}
     </script>
 
     <!--     Google Analytics -->

@@ -1,5 +1,4 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400");
-
 @media (min-width: 768px) {
     .containercontact {
         width: 750px;
@@ -15,7 +14,7 @@
         width: 1170px;
     }
 }
- html {
+html {
     -webkit-font-smoothing: antialiased;
 }
 #warning {
@@ -41,6 +40,7 @@ p {
     display: relative;
 }
 /*<-HOME CSS ->*/
+
 .home-small {
     display: none;
     width: 100%;
@@ -54,9 +54,9 @@ p {
     display: block;
     position: absolute;
     margin: auto;
-    top: 31%;
-    left: 34%;
-    width: 30%;
+    top: 51%;
+    left: 32%;
+    width: 35%;
     height: auto;
 }
 /*The cover photo full width*/
@@ -66,30 +66,26 @@ p {
     height: auto;
     margin: 0 0 10px 0;
 }
-.fulls
-{
+.fulls {
     position: absolute;
     max-width: 100%;
     max-height: 100%;
     top: 10%;
     left: 23%;
 }
-#ufo
-{
-  position: absolute;
+#ufo {
+    position: absolute;
     max-width: 5%;
     height: auto;
     left: 57%;
-    top: 80%;      
+    top: 80%;
 }
-
-#goat
-{
-position: absolute;
+#goat {
+    position: absolute;
     max-width: 8%;
     height: auto;
     left: 25%;
-    top: 48%;    
+    top: 48%;
 }
 .lines1 {
     position: absolute;
@@ -101,10 +97,10 @@ position: absolute;
 }
 #rocket {
     position: absolute;
-    max-width: 48%;
+    max-width: 30%;
     height: auto;
-    left: 16%;
-    top: 5.5%;
+    left: 21%;
+    top: 35%;
 }
 .maincell {
     position: absolute;
@@ -117,7 +113,7 @@ position: absolute;
     position: absolute;
     max-width: 55%;
     height: auto;
-    left: 42%;
+    left: 26%;
     top: 20%;
 }
 .small-cell-left {
@@ -205,7 +201,6 @@ position: absolute;
     font-family: 'Asap', sans-serif;
 }
 .service-grid span {
-    
     width: 70px;
     height: 70px;
     display: inline-block;
@@ -225,7 +220,7 @@ position: absolute;
     margin: 1em auto 0 auto;
 }
 .service-grid span.s-icon {
-        background-position: 4px 0px;
+    background-position: 4px 0px;
 }
 .service-grid:hover span.s-icon {
     background-position: -209px 0px;
@@ -433,39 +428,34 @@ ul.social-icons li a:hover span.linkedin {
     color: #fff;
     margin: 4em 0 1em;
 }
-
 /*NEW STUFF*/
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
-.portfolio-modal h2
-{
-    padding-bottom:5%;
+.portfolio-modal h2 {
+    padding-bottom: 5%;
 }
-
 #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
-
 #portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, .8);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
 }
-
 #portfolio .portfolio-item .portfolio-link .caption:hover {
     opacity: 1;
 }
-
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
     position: absolute;
     top: 50%;
@@ -476,16 +466,13 @@ ul.social-icons li a:hover span.linkedin {
     font-size: 20px;
     color: #fff;
 }
-
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
-
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
     margin: 0;
 }
-
 #portfolio * {
     z-index: 2;
 }
@@ -497,24 +484,20 @@ ul.social-icons li a:hover span.linkedin {
     border-radius: 0;
     text-align: center;
     background-clip: border-box;
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, .8);
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
 }
-
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
 }
-
 .portfolio-modal .modal-content .item-details {
     margin: 30px 0;
 }
-
 .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
@@ -524,11 +507,9 @@ ul.social-icons li a:hover span.linkedin {
     background-color: transparent;
     cursor: pointer;
 }
-
 .portfolio-modal .close-modal:hover {
     opacity: .3;
 }
-
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
@@ -539,7 +520,6 @@ ul.social-icons li a:hover span.linkedin {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
@@ -549,7 +529,6 @@ ul.social-icons li a:hover span.linkedin {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-
 #h1textp {
     font-size: 7em;
     clear: left;
@@ -571,4 +550,24 @@ ul.social-icons li a:hover span.linkedin {
     font-weight: 300;
     padding: 5px;
     margin: 5px;
+}
+/*slider css*/
+div#inked-painted { 
+  position: relative; font-size: 0; 
+  -ms-touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+div#inked-painted img { 
+  width: 100%; height: 100%;; 
+}
+div#colored { 
+  background-image: url(../img/Concept-art/Concept-Art-dark.jpg);
+  position: absolute;
+  top: 0; left: 0; height: 100%;
+  width: 50%;
+  background-size: cover; 
+}
+div#inked-painted:hover {
+  cursor: col-resize; 
 }
