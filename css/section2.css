@@ -120,10 +120,10 @@
 .layer:nth-child(6) button {}
 /*Start Stack*/
 
-.moon {} .manonmoon {
+.moon {width: 90%;} .manonmoon {
     margin-top: 39%;
     margin-left: 28%;
-    width: 11%;
+    width: 9%;
     opacity: 1;
 }
 .rocktop {
