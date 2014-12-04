@@ -489,7 +489,7 @@ ul.social-icons li a:hover span.linkedin {
     min-height: 100%;
     border: 0;
     border-radius: 0;
-    text-align: left;
+    text-align: center;
     background-clip: border-box;
     background: rgba(0, 0, 0, .8);
     -webkit-box-shadow: none;
