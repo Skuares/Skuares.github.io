@@ -40,7 +40,7 @@ html {
 p {
     font-family: lato;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.05em;
 }
 .footer1 {
     font-family: 'Lato', sans-serif;
@@ -284,6 +284,9 @@ p {
 
 .contact {
     padding: 5em 0;
+/*    use media query for 4k& full hd suppourt */
+    margin-left: auto;
+    margin-right: auto;
 }
 .contact div.head-section h2 {
     color: #FFF;
@@ -511,7 +514,7 @@ ul.social-icons li a:hover span.linkedin {
     margin: 30px 0;
 }
 .portfolio-modal .close-modal {
-    position: absolute;
+/*    position: absolute;*/
     top: 25px;
     right: 25px;
     width: 75px;
@@ -519,6 +522,15 @@ ul.social-icons li a:hover span.linkedin {
     background-color: transparent;
     cursor: pointer;
     z-index: 1052;
+    position: fixed;
+  top: 10%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
 }
 .portfolio-modal .close-modal:hover {
     opacity: .3;
@@ -581,7 +593,7 @@ ul.social-icons li a:hover span.linkedin {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 10;
 }
 .no-touch #cd-vertical-nav li {
   text-align: right;
