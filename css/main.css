@@ -322,8 +322,8 @@ ul.social-icons li a {
     margin: 0 2em 0 0;
 }
 ul.social-icons li a span {
-    width: 30px;
-    height: 30px;
+    width: 31px;
+    height: 31px;
     display: inline-block;
     background: url(../images/social-icons.png) no-repeat 0px 0px;
 }
@@ -350,6 +350,29 @@ ul.social-icons li a span.linkedin {
 ul.social-icons li a:hover span.linkedin {
     background: url(../img/social/linkedin-iso-color.png) no-repeat;
 }
+ul.social-icons li a span.twitter {
+    background: url(../img/social/twitter-iso-white.png) no-repeat;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+ul.social-icons li a:hover span.twitter {
+    background: url(../img/social/twitter-iso-color.png) no-repeat;
+}
+ul.social-icons li a span.google {
+    background: url(../img/social/googleplus-iso-white.png) no-repeat;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+ul.social-icons li a:hover span.google {
+    background: url(../img/social/googleplus-iso-color.png) no-repeat;
+}
+
 .text-box input[type="text"],
 .subject-box textarea {
     width: 100%;
