@@ -1173,11 +1173,11 @@ End of Open spots-->
         // Yep, that's it!
         $('#scene').parallax();
 
-         //Resize to load small images 
+         //Resize to load small images,Disabled for now. change the file to imgMobile 
         $(function () {
             if ($(window).width() <= 1024) {
                 $("img").each(function () {
-                    $(this).attr("src", $(this).attr("src").replace("img/", "imgMobile/"));
+                    $(this).attr("src", $(this).attr("src").replace("img/", "img/"));
                 });
             }
         });
