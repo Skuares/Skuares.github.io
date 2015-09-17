@@ -7,3 +7,4 @@ Current Version: 0.4
 To do:
 
 Add Media Quiery for Ipads, Iphones to render images in a proper size.
+Add error pages. 404 among others. 
